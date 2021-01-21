@@ -2,8 +2,8 @@
 //  SwiftUIDemoUITests.swift
 //  SwiftUIDemoUITests
 //
-//  Created by Haresh on 1/16/21.
-//
+//  Created by Haresh on 11/01/21.
+//  Copyright © 2021 Haresh. All rights reserved.
 
 import XCTest
 
@@ -22,11 +22,20 @@ class SwiftUIDemoUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    func testInitialViewState() {
+        let app = XCUIApplication()
+        app.launch()
+        print(app.debugDescription)
+    }
     func testExample() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
 
+        _ = EmployeeList()
+        _ = EmployeeDetail.self
+        
+            
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

@@ -2,8 +2,8 @@
 //  EmployeeList.swift
 //  SwiftUI-ListView
 //
-//  Created by Priya Talreja on 15/12/19.
-//  Copyright © 2019 Priya Talreja. All rights reserved.
+//  Created by Haresh on 12/01/21.
+//  Copyright © 2021 Haresh. All rights reserved.
 //
 
 import SwiftUI
@@ -16,7 +16,7 @@ struct EmployeeList: View {
                NavigationLink(destination: EmployeeDetail(employee: employee)) {
                 EmployeeRow(employee: employee)
                 }
-            }.navigationBarTitle(Text("Employee List"))
+            }.navigationBarTitle(Text("Team Members"))
         }
     }
 }

@@ -2,8 +2,8 @@
 //  CircleImage.swift
 //  SwiftUI-ListView
 //
-//  Created by Priya Talreja on 15/12/19.
-//  Copyright © 2019 Priya Talreja. All rights reserved.
+//  Created by Haresh on 11/01/21.
+//  Copyright © 2021 Haresh. All rights reserved.
 //
 
 import SwiftUI
@@ -15,15 +15,15 @@ struct CircleImage: View {
         Image(imageName)
             .resizable()
             .frame(width: size, height: size)
-            .scaledToFit()
+            .scaleEffect()
             .clipShape(Circle())
-            .overlay(Circle().stroke(Color.green, lineWidth: 4))
-            .shadow(radius: 10)
+            .overlay(Circle().stroke(Color.accentColor, lineWidth: 2.5))
+            .shadow(radius: 15)
     }
 }
 
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
-        CircleImage(imageName: "vinci", size: 50)
+        CircleImage(imageName: "vinci", size: 60)
     }
 }
